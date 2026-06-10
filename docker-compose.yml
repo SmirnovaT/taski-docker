@@ -26,7 +26,7 @@ services:
   frontend:
     env_file: .env
     build: ./frontend/
-    command: sh -c "cp -r /app/build/static/. /frontend_static/static/ && cp /app/build/index.html /frontend_static/"
+    command: sh -c "cp -r /app/build/static/. /frontend_static/ && cp /app/build/index.html /frontend_static/"
     volumes:
       - static:/frontend_static
 
